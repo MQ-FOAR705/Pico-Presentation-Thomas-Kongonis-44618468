@@ -29,6 +29,7 @@
 \usepackage[UKenglish]{babel} %https://tex.stackexchange.com/a/27743 
 \usepackage[pangram]{blindtext} % https://tex.stackexchange.com/a/48411
 
+
 %\usepackage{parskip} % from https://tex.stackexchange.com/q/11622
 %\setlength{\parskip}{12pt} 
 
@@ -133,7 +134,7 @@
       \hyperlink{major}{\beamerbutton{Example}}
     \tocbuttoncolor{slab}
     \hspace{\buttonspacingfootline}
-      \hyperlink{slab}{\beamerbutton{Work Flow}}
+      \hyperlink{slab}{\beamerbutton{Template}}
     \tocbuttoncolor{minor}
     \hspace{\buttonspacingfootline}
       \hyperlink{minor}{\beamerbutton{Conclusion}}
@@ -283,57 +284,23 @@ This is an simple example of the script in action
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
 %http://lorempixel.com/1200/800/cats/Figure6/
-\begin{center}
-\includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
-figure/figure6.png}
-\end{center}
-    \parbox{\linewidth}{
-Template: I have created a template directory so that anyone can replicate this with other translations. 
 
+   \begin{flushleft}
+   \parbox{\linewidth}{
+\begin{itemize}
+\item{Template: I have created a template directory so that anyone can replicate this with other translations. This includes scripts for correct document names and creation also.} 
+\end{itemize}
 }
+\begin{flushright}
+\includegraphics[width=1.7\textwidth,height=0.50\textheight,keepaspectratio]{%
+figure/eg444.png}
+\end{flushright}
+\end{flushleft}
 \end{frame}
 
 
 
-\begin{frame}\label{slabtable}
-\begin{columns}
-\begin{column}[t]{1.1\textwidth}
-\hyperlink{slab}{\beamerbutton{\dots back to figure}}\\
-Morbi mauris turpis, ornare eu elit quis, pulvinar bibendum sapien. Nulla vel justo id dui aliquam blandit. Etiam pellentesque ac nisl ut suscipit. 
 
-
-%Table from original template.
-
-\vspace{0.3cm}
-\end{column}
-\end{columns}
-\usebeamerfont{bodytext}
- \begin{tabular}{c|rr@{}c@{}rrrrr}
- \setlength{\tabcolsep}{6mm}
-   & Time & \multicolumn{3}{r}{Volume} & Range & Length & Area & Depth \\
-   & [\si{\second}] & \multicolumn{3}{r}{[\si{\cubic\metre}]} & [\si{\metre}] &
-[\si{\metre}] & [\si{\square\metre}] & [\si{\metre}]\\\hline
-
-   \textbf{Avalanche~\#0019} & & $V_t$ &=& 29500 & & & 40411 & 0.73 \\
-   initial release &3.4& $V_0$ &=& 2188 & 2506 &  62 &  1400 & 1.56 \\
-   slab \#1 & 17.2    &  $V_1$ &=&  521 & 2356 &  39 &   701 & 0.74 \\
-   slab \#2 & 23.4    &  $V_2$ &=& 3503 & 2284 &  83 &  2753 & 1.28 \\
-   slab \#3 & 20--25$^*$ &  $V_3$ &=& 3345 & 2150 &  99 &  1880 & 1.78 \\
-   slab \#4 & 38.7    &  $V_4$ &=& 4276 & 1945 & 153 &  3657 & 1.17 \\
-   \\
-   \textbf{Avalanche~\#0017} & &  $V_t$ &=& 78500 & & & 82632 & 0.95\\
-   initial release&5.2&  $V_0$ &=& 15233 & 2402 & 191 & 12974 & 1.17\\
-   slab \#5 & 12.2    &  $V_5$ &=&  7620 & 2219 & 202 &  6043 & 1.26 \\
-   slab \#6 & 14.1    &  $V_6$ &=&  5868 & 2215 & 166 &  5851 & 1.01 \\
-   slab \#7 & 25.6    &  $V_7$ &=&  6307 & 1982 &  95 &  3320 & 1.90 \\
-   slab \#8 & 15--25$^*$ &  $V_8$ &=& 10663 & 1947 & 253 &  5037 & 2.12
- \end{tabular}
- 
-\vspace{0.2cm}
- \textbf{Table:} Release time, Volume, Location and size parameters of all
-identified slabs.
-
-\end{frame}
 
 
 
@@ -341,17 +308,7 @@ identified slabs.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mysection{minor}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}\label{\secvariable} %%Eine Folie
-\begin{center}
-%http://lorempixel.com/1200/800/cats/Figure7/
-\includegraphics[width=1\textwidth,height=0.7\textheight,keepaspectratio]{%
-figure/figure7.png}
-\end{center}
-\vspace{-0.2cm}
 
-Duis condimentum est id nulla dapibus semper. Maecenas in tellus eget purus egestas fringilla in vitae nisl. Nulla vulputate tempor purus ut finibus. Nunc gravida placerat tortor vel efficitur. Sed tincidunt enim sed nisl hendrerit vestibulum. 
-
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -359,12 +316,17 @@ Duis condimentum est id nulla dapibus semper. Maecenas in tellus eget purus eges
 \begin{frame}\label{\secvariable}
 
 %
-\includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-figure/figure7.png}\hspace{.05\textwidth}
-\includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-figure/figure7.png}
 
-Maecenas nec accumsan nunc. Aenean pretium nulla augue, sit amet volutpat leo consectetur tincidunt. Donec scelerisque erat a semper lacinia. Pellentesque aliquet libero neque, ac consequat metus feugiat eget. Etiam aliquam maximus libero, quis hendrerit ex mattis vitae. Duis sed metus ultrices, hendrerit sapien vitae, fringilla nunc. 
+Location of Proof of Concept and Template: \url{https://github.com/MQ-FOAR705/Tom_Kongonis_44618468_POC.git}
+
+\vspace{5mm}
+
+\begin{itemize}
+\item{\textbf{Bibliography:}}
+\item{Csikszentmihalyi, M., 2004. Material Virtue Ethics and the Body in Early China. 1st ed. Leiden: Brill NV.}
+
+\item{Tzu, L., 2015. Dao De Jing. 1st ed. s.l.:Project Gutenberg.}
+\end{itemize}
 
 \end{frame}
 
