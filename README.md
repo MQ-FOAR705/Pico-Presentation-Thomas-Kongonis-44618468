@@ -1,4 +1,9 @@
-There has been some probelms with the code, for some reason it shows another presentation.
+This is my Pico Presentation, all is well. 
 
-I will create another document for the code and will upload my working presentation to here
-Pico_fixed.tex is the document that contains the code i wrote
+There were originally issues with the compiling and other such things due to the example pdf that remained within the overleaf page after i copied the template into a new document to work with coding. 
+
+This was resolved,
+
+Will upload .pdf to here as well as Cloudstor
+
+I now realise the importance of github and commits
