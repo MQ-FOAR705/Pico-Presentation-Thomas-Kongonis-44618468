@@ -1,4 +1,3 @@
-# pico-latex-presentation
-This is a repository to collect ideas for a Latex document to produce a PICO presentation for the EGU conference.
+There has been some probelms with the code, for some reason it shows another presentation.
 
-There is a pdf as preview to see the result. The document will not compile because most figures are missing, so edit the source or add you own image.
+I will create another document for the code and will upload my working presentation to here
